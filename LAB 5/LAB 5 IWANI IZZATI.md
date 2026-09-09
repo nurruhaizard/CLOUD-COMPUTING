@@ -4,7 +4,8 @@
 
 ---
 
-**Student Name:** IWANI IZZATI 
+| **Student Name** | NUR IWANI IZZATI BINTI RUHAIZARD |
+| **Student ID** | 52215225392 | 
 **Course Code:** IKB42603 Cloud Computing Security Essentials  
 **Program:** Bachelor of Information Technology / Computer Science (Information Security / Cloud Computing)  
 **Lecturer / Instructor:** Ms Adani 

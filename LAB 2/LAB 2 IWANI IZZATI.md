@@ -8,10 +8,11 @@
 
 | **Item** | **Details** |
 | :--- | :--- |
-| **Student Name** | IWANI IZZATI |
+| **Student Name** | NUR IWANI IZZATI BINTI RUHAIZARD |
+| **Student ID** | 52215225392D |
 | **Course Code** | IKB42603 Cloud Computing Security Essentials |
 | **Program** | Bachelor of Information Technology / Computer Science (Information Security / Cloud Computing) |
-| **Lecturer / Instructor** | Prof. Dr. Shahrulniza Musa |
+| **Lecturer / Instructor** | Ms Adani |
 | **Lab Assignment** | Lab 2 (Weeks 3–4) |
 | **Academic Session** | 2 Sessions over 2 Weeks (Session A & Session B) |
 | **GitHub Repository** | [nurruhaizard/CLOUD-COMPUTING](https://github.com/nurruhaizard/CLOUD-COMPUTING) |

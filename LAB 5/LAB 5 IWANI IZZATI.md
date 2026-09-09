@@ -4,10 +4,10 @@
 
 ---
 
-**Student Name:** IWANI IZZATI  
+**Student Name:** IWANI IZZATI 
 **Course Code:** IKB42603 Cloud Computing Security Essentials  
 **Program:** Bachelor of Information Technology / Computer Science (Information Security / Cloud Computing)  
-**Lecturer / Instructor:** Prof. Dr. Shahrulniza Musa  
+**Lecturer / Instructor:** Ms Adani 
 **Lab Assignment:** Lab 5 (Weeks 9–10)  
 **GitHub Repository:** [nurruhaizard/CLOUD-COMPUTING](https://github.com/nurruhaizard/CLOUD-COMPUTING)  
 **Date of Submission:** 8 September 2026  

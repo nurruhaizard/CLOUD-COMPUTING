@@ -18,6 +18,7 @@
 | **Lab 3** | Data Protection: Encryption & Key Management | Symmetric (AES), Asymmetric (RSA), TLS, Envelope Encryption, KMS, Cryptographic Erasure, Hash Chaining | [LAB 3 Report](./LAB%203/LAB%203%20IWANI%20IZZATI.md) | [LAB 3 EVIDENCE](./LAB%203/EVIDENCE/) |
 | **Lab 4** | Access Control & Network Security | AuthN vs AuthZ, MFA TOTP, Kubernetes RBAC, Three-Tier Segmentation, Default-Deny, Container Hardening | [LAB 4 Report](./LAB%204/LAB%204%20IWANI%20IZZATI.md) | [LAB 4 EVIDENCE](./LAB%204/EVIDENCE/) |
 | **Lab 5** | Monitoring, Logging & Incident Detection | Telemetry, CloudWatch, Hash-Chained Logs, SIEM Correlation, Incident Response | [LAB 5 Report](./LAB%205/LAB%205%20IWANI%20IZZATI.md) | [LAB 5 Evidence](./LAB%205/Evidence/) |
+| **Lab 6** | Object Storage Security & the Data Security Lifecycle | Data Classification, S3 Block Public Access, Identity vs Resource Policies, SSE-KMS & S3 Bucket Keys, Presigned URLs, Versioning Remanence, S3 Lifecycle, Cryptographic Erasure | [LAB 6 Report](./LAB%206/LAB%206%20IWANI%20IZZATI.md) | [LAB 6 Evidence](./LAB%206/Evidence/) |
 
 ---
 
@@ -118,3 +119,25 @@
 | **Task 4** | Tamper-Proof (Hash-Chained) Logs using SHA-256 | Completed |
 | **Task 5** | Detect the Incident via Multi-Event Correlation (SIEM logic) | Completed |
 | **Task 6** | Incident Response: Containment (iptables) & Evidence Preservation (sha256sum) | Completed |
+
+---
+
+## Lab 6 Overview: Object Storage Security & the Data Security Lifecycle (Amazon S3 on LocalStack)
+
+- 📄 **Full Report:** [LAB 6 IWANI IZZATI.md](./LAB%206/LAB%206%20IWANI%20IZZATI.md)
+- 📁 **Evidence Repository:** [LAB 6/Evidence/](./LAB%206/Evidence/)
+- 📘 **Lab Guide:** [IKB42603_Lab6_Object_Storage_and_Data_Lifecycle.pdf](./LAB%206/IKB42603_Lab6_Object_Storage_and_Data_Lifecycle.pdf)
+
+### Lab 6 Execution Matrix
+
+| Step / Task | Description | Security Dimension | Status |
+| :--- | :--- | :---: | :---: |
+| **Task 1** | Classify Data Before Storing (miit-patient-records-3104 bucket, public/internal/confidential object tagging) | Data Classification & Governance | Completed |
+| **Task 2** | Reproduce the Archetypal Breach (Wildcard resource policy `"Principal": "*"` and unauthenticated anonymous curl leak) | Threat Simulation & Vulnerability Analysis | Completed |
+| **Task 3** | Remediate with Block Public Access (All 4 BPA flags enabled, scoped least-privilege root policy) | Preventative Guardrails | Completed |
+| **Task 4** | Identity Policy vs Resource Policy (DataAnalyst IAM user, S3ReadAll vs bucket DenyConfidential, explicit Deny precedence) | Cloud Authorization Engine | Completed |
+| **Task 5** | Default Encryption at Rest (SSE-KMS customer-managed key, S3 Bucket Key envelope encryption optimization) | Cryptographic Data Protection | Completed |
+| **Task 6** | Delegated Access & Condition-Key Trap (HMAC-SHA256 Presigned URLs, aws:SecureTransport condition key analysis) | Delegated Authorization & Policy Scoping | Completed |
+| **Task 7** | Versioning, Delete Markers & Data Remanence (Delete marker mechanics, forensic recovery of version null, per-version permanent purge) | Storage Remanence & Privacy Compliance | Completed |
+| **Task 8** | Lifecycle Retention & Cryptographic Erasure (S3 Lifecycle expiration rules, KMS CMK deletion & mathematical provable destruction) | Data Sanitization & Audit Assurance | Completed |
+

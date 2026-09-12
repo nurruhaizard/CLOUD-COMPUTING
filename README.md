@@ -13,10 +13,33 @@
 
 | Lab Module | Title | Primary Security Domains | Report Link | Evidence Directory |
 | :--- | :--- | :--- | :---: | :---: |
+| **Lab 1** | Cloud Account Security, Identity & Access Management | Identity Governance, Least Privilege, LocalStack IAM, Credential Hygiene, Kubernetes RBAC | [LAB 1 Report](./LAB%201/LAB%201%20IWANI%20IZZATI.md) | [LAB 1 Evidence](./LAB%201/Evidence/) |
 | **Lab 2** | Secure Isolation & Multi-Tenancy | Compute, Network, Storage Isolation, NetworkPolicy, RBAC, Data Remanence | [LAB 2 Report](./LAB%202/LAB%202%20IWANI%20IZZATI.md) | [LAB 2 EVIDENCE](./LAB%202/EVIDENCE/) |
 | **Lab 3** | Data Protection: Encryption & Key Management | Symmetric (AES), Asymmetric (RSA), TLS, Envelope Encryption, KMS, Cryptographic Erasure, Hash Chaining | [LAB 3 Report](./LAB%203/LAB%203%20IWANI%20IZZATI.md) | [LAB 3 EVIDENCE](./LAB%203/EVIDENCE/) |
 | **Lab 4** | Access Control & Network Security | AuthN vs AuthZ, MFA TOTP, Kubernetes RBAC, Three-Tier Segmentation, Default-Deny, Container Hardening | [LAB 4 Report](./LAB%204/LAB%204%20IWANI%20IZZATI.md) | [LAB 4 EVIDENCE](./LAB%204/EVIDENCE/) |
 | **Lab 5** | Monitoring, Logging & Incident Detection | Telemetry, CloudWatch, Hash-Chained Logs, SIEM Correlation, Incident Response | [LAB 5 Report](./LAB%205/LAB%205%20IWANI%20IZZATI.md) | [LAB 5 Evidence](./LAB%205/Evidence/) |
+
+---
+
+## Lab 1 Overview: Cloud Account Security, Identity & Access Management (LocalStack IAM & Kubernetes RBAC)
+
+- 📄 **Full Report:** [LAB 1 IWANI IZZATI.md](./LAB%201/LAB%201%20IWANI%20IZZATI.md)
+- 📁 **Evidence Repository:** [LAB 1/Evidence/](./LAB%201/Evidence/)
+- 📘 **Lab Guide:** [IKB42603_Lab1_Account_Security_and_IAM.pdf](./LAB%201/IKB42603_Lab1_Account_Security_and_IAM.pdf)
+
+### Lab 1 Execution Matrix
+
+| Step / Task | Description | Security Dimension | Status |
+| :--- | :--- | :---: | :---: |
+| **Setup** | Stand up LocalStack IAM/STS container & initial caller-identity check | Environment Setup | Completed |
+| **Task 1** | Map Cloud Identity Landscape (Root, IAM User, Policy, Group, Role) | Identity Governance | Completed |
+| **Task 2** | Least-Privilege Admin (Admins group, AdministratorAccess, CloudAdmin_NADYA) | Privilege Delegation | Completed |
+| **Task 3** | Scoped Policy Enforcement (Analyst_NADYA, AmazonS3ReadOnlyAccess, blast-radius reduction) | Least Privilege | Completed |
+| **Task 4** | Credential Hygiene & Access Keys (Key generation, metadata inspection, status deactivation) | Credential Lifecycle | Completed |
+| **Task 5** | Separate Environments with Namespaces (dev and prod namespace isolation in kind cluster) | Multi-Tenancy | Completed |
+| **Task 6** | Define a Role and Bind It (dev-user ServiceAccount, pod-reader Role, dev-user-binding) | Kubernetes RBAC | Completed |
+| **Task 7** | Test Access Control Boundary (kubectl auth can-i evaluation: dev allowed, delete & prod denied) | AuthN vs AuthZ Enforcement | Completed |
+
 
 ---
 
